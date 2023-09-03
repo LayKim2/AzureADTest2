@@ -1,0 +1,16 @@
+﻿<AuthorizeView>
+    <Authorized>
+        Hello, @context.User.Identity?.Name!
+        <a href="MicrosoftIdentity/Account/SignOut">Log out</a>
+    </Authorized>
+    <NotAuthorized>
+        <a href="MicrosoftIdentity/Account/SignIn">Log in</a>
+
+        @*<a href="https://login.microsoftonline.com/546621d9-5a22-480c-a923-165386112543/oauth2/v2.0/authorize?client_id=3b72703c-3ef9-4b6c-bfc8-7a7d34edc930&redirect_uri=https%3A%2F%2Flocalhost%3A7176%2Fapi%2Fauth&response_type=code&scope=openid%20profile%20offline_access%20user.read%20calendars.read&code_challenge=rGM4lhABPqLQgLlLWINs3JLReGMqjTJacXruQIRjuVs&code_challenge_method=S256&response_mode=form_post&nonce=638293431579029822.MTQ4ODJhZDMtNmYzZS00NWRhLTg0YmEtMWQzMDdiZjExNTQxYTg2NjM3N2ItMDM5Zi00MWEzLTgyZjItOWRhMjNkNDdhZmQ1&client_info=1&x-client-brkrver=IDWeb.1.25.3.0&state=CfDJ8Jl985vsFNJGmeNWhNRiMBXTxtlvjreR5ra1JVnPbrDgr1kaNK4aZPnJhb5phk8EBzhBrgSPulHyqddHRFwJrP0GE87BNU7Fcor9amF_FeIUDh_fCgxZVzphlsSQwBT9vEg7ZARe5Hu4J1b1Iw5x6AdjwFZNwgMr5FX05jPOegrAm1tZdmionhwdsa0SbB9RzEnMc6NqYsWrnuh9E8iK-p4AwaQC6vgt4Ctf_wl0sa7eWmZZPGlkfw0M4A1sfyXhLSB2Iya7i6YS9p01SDV3nxQHVqRzLAmBWI4uUCma88kFzxI18fJC-n26fbTS2TE_XzoA45eX-uTv_G-ZIm3MAMr3Zqkgf20bNldttPKgTIPr&x-client-SKU=ID_NET6_0&x-client-ver=6.23.1.0" class="ms-login-btn">
+        <div>
+        <img src="/images/Microsoft_logo.svg.png" alt="MS Logo" class="ms-logo">
+        <span class="ms-text">Sign in with Microsoft</span>
+        </div>
+        </a>*@
+    </NotAuthorized>
+</AuthorizeView>
